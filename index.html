@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Tempo</title>
+    <script src="https://kit.fontawesome.com/8d45ecf6f3.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="snow">
+    <!-- HEADER AREA -->
+
+    <header id="headerArea">
+        <nav id="navArea" class="container">
+            <div class="logoArea">
+                <img src="assets/images/icons8-guarda-chuva-30.png" alt="">
+                <div class="logoTextArea">Clima Tempo - <span>For MyApp</span></div>
+            </div>
+            <div class="socialsMedia">
+                <a href="https://github.com/EuMarcel0/" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://wa.me/5577991776299?text=Ol%C3%A1%2C%20tudo%20bem%3F" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/marcelo-ribeiro-da-silva-aa444921b/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HEADER AREA -->
+    <main>
+        <section id="sectionClima" class="container">
+            <div class="climaContainer--FormArea">
+                <form action="" id="searchArea">
+                    <input type="search" id="getNameCity" autofocus placeholder="Digite o nome da cidade">
+                    <input type="submit" id="sendNameCity" value="Buscar">
+                </form>
+                <div class="imageSun">
+                    <img src="assets/images/sol.png" alt="icon_sun">
+                </div>
+            </div>
+            <div id="results">
+                <h2 id="cityName">Tempo agora em Bom Jesus da Lapa, BR</h2>
+                <div class="imgTempArea">
+                    <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="temp_icon" id='climaImageDefault'>
+                    <div id="temp">31<span>°C</span></div>
+                </div>
+                <div id="minMax">
+                    <div id="minTemp">...</div>
+                    <div class="lineMinMax"></div>
+                    <div id="maxTemp">...</div>
+                </div>
+                <div id="moreInfos">
+                    <div class="moreInfos--items">
+                        <div class="moreInfos--itemsArea">
+                            <img src="assets/images/vento.png" alt="vento_icon">
+                            <div class="moreInfos--itemsDescription" id="wind">Vento: </div>
+                        </div>
+                        <span class="km" id="kmStatus"></span>
+                    </div>
+                    <div class="moreInfos--items">
+                        <div class="moreInfos--itemsArea">
+                            <img src="assets/images/umidade.png" alt="umidade_icon">
+                            <div class="moreInfos--itemsDescription">Umidade: </div>
+                        </div>
+                        <span class="humidity" id="humidity">--</span>
+                    </div>
+                    <div class="moreInfos--items">
+                        <div class="moreInfos--itemsArea">
+                            <img src="assets/images/feels.png" alt="sensacao_icon">
+                            <div class="moreInfos--itemsDescription">Sensação térmica: </div>
+                        </div>
+                        <span class="feels" id="feels">--</span>
+                    </div>
+                    <div class="moreInfos--items">
+                        <div class="moreInfos--itemsArea">
+                            <img src="assets/images/nuvens.png" alt="nuvens_icon">
+                            <div class="moreInfos--itemsDescription">Nuvens: </div>
+                        </div>
+                        <span class="cloud" id='clouds'>--</span>
+                    </div>
+                </div>
+            </div>
+            <div id="messageError">
+                <img src="assets/images/atencao.png" alt="atencao_icon">
+                Cidade digitada não localizada, por favor verifique.
+            </div>
+            <button id="newConsult">Nova Consulta</button>
+        </section>
+    </main>
+    <footer>
+        <div id="footerArea">
+            © 2022 Marcelo Silva - Todos os direitos reservados.
+        </div>
+    </footer>
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
