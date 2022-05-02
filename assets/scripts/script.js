@@ -22,10 +22,11 @@ gE('searchArea').addEventListener('submit', async(e)=>{
             gE('feels').innerHTML = `${reqTempToJson.main.feels_like+'<span> °C</span>'}`;
             gE('clouds').innerHTML = `${clouds}`;
 
-
+            gE('newConsult').style.display = 'flex';
             gE('results').style.display = 'flex';
             gE('messageError').style.display = 'none';
             gE('loadingContent').style.display = 'none';
+            gE('formArea').style.display='none';
     
         }else{
             gE('messageError').style.display = 'flex';
