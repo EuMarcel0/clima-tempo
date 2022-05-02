@@ -4,7 +4,7 @@ const gE = (elem)=>{
 
 gE('searchArea').addEventListener('submit', async(e)=>{
     e.preventDefault(e);
-
+    gE('loadingContent').style.display = 'flex';
     let valueInput = gE('getNameCity').value;
     if(valueInput !== ''){
         let reqTemp = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(valueInput)}&appid=e9631253182add3760871d9df5cf3cec&units=metric&lang=pt_br`)
@@ -25,10 +25,12 @@ gE('searchArea').addEventListener('submit', async(e)=>{
 
             gE('results').style.display = 'flex';
             gE('messageError').style.display = 'none';
+            gE('loadingContent').style.display = 'none';
     
         }else{
             gE('messageError').style.display = 'flex';
             gE('results').style.display = 'none';
+            gE('loadingContent').style.display = 'none';
         }
 
     }else if(valueInput == ''){
