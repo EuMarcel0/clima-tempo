@@ -35,6 +35,7 @@ gE('searchArea').addEventListener('submit', async(e)=>{
 
     }else if(valueInput == ''){
         alert ('Por favor, informe o nome da cidade');
+        gE('loadingContent').style.display = 'none';
     }
 })
 
