@@ -295,4 +295,8 @@ footer{
     .imageSun {
         display: none;
     }
+    #messageError{
+        font-size: 13px;
+        flex-direction:column-reverse;
+    }
 }
