@@ -43,5 +43,5 @@ Open Source
 
 ## 🎁 Expressões de gratidão
 
-Fico muito grato por ter concluío este projeto. Graças à Deus deu tudo certo.
+Fico muito grato por ter concluído este projeto. Graças à Deus deu tudo certo.
 💻🚀😊😊
