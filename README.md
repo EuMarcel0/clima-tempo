@@ -1,6 +1,6 @@
 # Clima Tempo - For MyApp
 
-<img srs='assets/images/print.png'>
+<img src='assets/images/print.png'>
 
 Esta aplicação foi desenvolvida para informar ao usuário a temperatura de determinada localidade consultando pelo nome da cidade. 
 Para trazer os dados, estou fazendo uma requisição via fetch a API da [OpenWeather](https://openweathermap.org/api).
